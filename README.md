@@ -131,7 +131,7 @@ The challenge was to build a platform that combines:
 ---
 
 ## Project Structure
-
+```
 src/
 │
 ├── components/
@@ -169,7 +169,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
-
+```
 ---
 
 ## Known Limitations
