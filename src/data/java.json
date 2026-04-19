@@ -1,0 +1,192 @@
+[
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy1 {\n    public static void main(String[] args) {\n        int[] arr = {1,2,3,4,5};\n        int sum = 0;\n        for(int i=0;i<arr.length;i++) {\n            sum += arr[i];\n        }\n        System.out.println(sum);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy2 {\n    public static void main(String[] args) {\n        int[] arr = {5,2,9,1};\n        int max = arr[0];\n        for(int i=1;i<arr.length;i++) {\n            if(arr[i] > max) {\n                max = arr[i];\n            }\n        }\n        System.out.println(max);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy3 {\n    public static void main(String[] args) {\n        String s = \"java\";\n        String rev = \"\";\n        for(int i=s.length()-1;i>=0;i--) {\n            rev += s.charAt(i);\n        }\n        System.out.println(rev);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy4 {\n    public static void main(String[] args) {\n        int[] arr = {1,2,3,4,5,6};\n        int even=0, odd=0;\n        for(int i=0;i<arr.length;i++) {\n            if(arr[i]%2==0) {\n                even++;\n            } else {\n                odd++;\n            }\n        }\n        System.out.println(even);\n        System.out.println(odd);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy5 {\n    public static void main(String[] args) {\n        int n=5;\n        int fact=1;\n        for(int i=1;i<=n;i++) {\n            fact*=i;\n        }\n        System.out.println(fact);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy6 {\n    public static int add(int a,int b) {\n        return a+b;\n    }\n    public static void main(String[] args) {\n        int result = add(3,4);\n        System.out.println(result);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy7 {\n    public static void main(String[] args) {\n        int n=-3;\n        if(n>0) {\n            System.out.println(\"Positive\");\n        } else if(n<0) {\n            System.out.println(\"Negative\");\n        } else {\n            System.out.println(\"Zero\");\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy8 {\n    public static void main(String[] args) {\n        int[] arr = {2,4,6,8};\n        int sum=0;\n        for(int x:arr) {\n            sum += x;\n        }\n        double avg = sum / (double)arr.length;\n        System.out.println(avg);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy9 {\n    public static void main(String[] args) {\n        int[] arr = {7,3,9,2};\n        int min = arr[0];\n        for(int i=1;i<arr.length;i++) {\n            if(arr[i] < min) {\n                min = arr[i];\n            }\n        }\n        System.out.println(min);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy10 {\n    public static void main(String[] args) {\n        for(int i=1;i<=5;i++) {\n            for(int j=1;j<=i;j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy11 {\n    public static void main(String[] args) {\n        String s = \"hello\";\n        if(s.length()>3) {\n            System.out.println(\"Long\");\n        } else {\n            System.out.println(\"Short\");\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy12 {\n    public static void main(String[] args) {\n        int n=10;\n        int sum=0;\n        for(int i=1;i<=n;i++) {\n            sum+=i;\n        }\n        System.out.println(sum);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy13 {\n    public static void main(String[] args) {\n        int[] arr = {4,7,1,9};\n        int target = 7;\n        boolean found=false;\n        for(int i=0;i<arr.length;i++) {\n            if(arr[i]==target) {\n                found=true;\n            }\n        }\n        System.out.println(found);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy14 {\n    public static void main(String[] args) {\n        int a=5,b=10;\n        int temp=a;\n        a=b;\n        b=temp;\n        System.out.println(a);\n        System.out.println(b);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public class Easy15 {\n    public static void main(String[] args) {\n        int n=12345;\n        int count=0;\n        while(n>0) {\n            count++;\n            n/=10;\n        }\n        System.out.println(count);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium1 {\n    public static void main(String[] args) {\n        int[] arr={1,2,3,4,5};\n        int i=0,j=arr.length-1;\n        while(i<j) {\n            int temp=arr[i];\n            arr[i]=arr[j];\n            arr[j]=temp;\n            i++; j--;\n        }\n        for(int x:arr) {\n            System.out.println(x);\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium2 {\n    public static void main(String[] args) {\n        String s=\"madam\";\n        String rev=\"\";\n        for(int i=s.length()-1;i>=0;i--) {\n            rev+=s.charAt(i);\n        }\n        if(s.equals(rev)) {\n            System.out.println(\"Palindrome\");\n        } else {\n            System.out.println(\"Not Palindrome\");\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium3 {\n    public static void main(String[] args) {\n        int[] arr={1,2,2,3,3,3};\n        int[] freq=new int[10];\n        for(int i=0;i<arr.length;i++) {\n            freq[arr[i]]++;\n        }\n        for(int i=0;i<freq.length;i++) {\n            if(freq[i]>0) {\n                System.out.println(i+\":\"+freq[i]);\n            }\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium4 {\n    static int square(int x) {\n        return x*x;\n    }\n    public static void main(String[] args) {\n        for(int i=1;i<=5;i++) {\n            System.out.println(square(i));\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium5 {\n    public static void main(String[] args) {\n        int[][] mat={{1,2},{3,4}};\n        int sum=0;\n        for(int i=0;i<mat.length;i++) {\n            for(int j=0;j<mat[i].length;j++) {\n                sum+=mat[i][j];\n            }\n        }\n        System.out.println(sum);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium6 {\n    public static void main(String[] args) {\n        int[] arr={5,1,4,2,8};\n        for(int i=0;i<arr.length;i++) {\n            for(int j=0;j<arr.length-1;j++) {\n                if(arr[j]>arr[j+1]) {\n                    int temp=arr[j];\n                    arr[j]=arr[j+1];\n                    arr[j+1]=temp;\n                }\n            }\n        }\n        for(int x:arr) {\n            System.out.println(x);\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium7 {\n    public static void main(String[] args) {\n        String s=\"education\";\n        int count=0;\n        for(int i=0;i<s.length();i++) {\n            char c=s.charAt(i);\n            if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u') {\n                count++;\n            }\n        }\n        System.out.println(count);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium8 {\n    static int fact(int n) {\n        if(n==0) return 1;\n        return n*fact(n-1);\n    }\n    public static void main(String[] args) {\n        System.out.println(fact(5));\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium9 {\n    public static void main(String[] args) {\n        int[][] m={{1,2,3},{4,5,6},{7,8,9}};\n        int sum=0;\n        for(int i=0;i<m.length;i++) {\n            sum+=m[i][i];\n        }\n        System.out.println(sum);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium10 {\n    public static void main(String[] args) {\n        int[][] m={{1,2},{3,4}};\n        int target=3;\n        boolean found=false;\n        for(int i=0;i<m.length;i++) {\n            for(int j=0;j<m[i].length;j++) {\n                if(m[i][j]==target) found=true;\n            }\n        }\n        System.out.println(found);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium11 {\n    public static void main(String[] args) {\n        String s=\"java\";\n        String res=\"\";\n        for(int i=0;i<s.length();i++) {\n            char c=s.charAt(i);\n            res+=Character.toUpperCase(c);\n        }\n        System.out.println(res);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium12 {\n    public static void main(String[] args) {\n        int[] arr={1,2,3,4,5};\n        int first=arr[0];\n        for(int i=0;i<arr.length-1;i++) {\n            arr[i]=arr[i+1];\n        }\n        arr[arr.length-1]=first;\n        for(int x:arr) {\n            System.out.println(x);\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium13 {\n    public static void main(String[] args) {\n        int[] arr={10,20,30,40};\n        int max=Integer.MIN_VALUE;\n        int second=Integer.MIN_VALUE;\n        for(int i=0;i<arr.length;i++) {\n            if(arr[i]>max) {\n                second=max;\n                max=arr[i];\n            } else if(arr[i]>second) {\n                second=arr[i];\n            }\n        }\n        System.out.println(second);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium14 {\n    public static void main(String[] args) {\n        int[] arr={1,1,2,3,3};\n        int n=arr.length;\n        for(int i=0;i<n;i++) {\n            for(int j=i+1;j<n;j++) {\n                if(arr[i]==arr[j]) {\n                    arr[j]=-1;\n                }\n            }\n        }\n        for(int i=0;i<n;i++) {\n            if(arr[i]!=-1) System.out.println(arr[i]);\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium15 {\n    public static void main(String[] args) {\n        String s=\"java is fun language\";\n        int count=1;\n        for(int i=0;i<s.length();i++) {\n            if(s.charAt(i)==' ') count++;\n        }\n        System.out.println(count);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium16 {\n    public static void main(String[] args) {\n        int[] arr={1,2,3,4};\n        for(int i=1;i<arr.length;i++) {\n            arr[i]+=arr[i-1];\n        }\n        for(int x:arr) {\n            System.out.println(x);\n        }\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium17 {\n    public static void main(String[] args) {\n        int[] arr={1,2,3,4,5};\n        int even=0,odd=0;\n        for(int i=0;i<arr.length;i++) {\n            if(arr[i]%2==0) even+=arr[i];\n            else odd+=arr[i];\n        }\n        System.out.println(even);\n        System.out.println(odd);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium18 {\n    public static void main(String[] args) {\n        int[][] m={{1,2,3},{4,5,6}};\n        int max=Integer.MIN_VALUE;\n        for(int i=0;i<m.length;i++) {\n            int sum=0;\n            for(int j=0;j<m[i].length;j++) {\n                sum+=m[i][j];\n            }\n            if(sum>max) max=sum;\n        }\n        System.out.println(max);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium19 {\n    static int balance=1000;\n    static void deposit(int amt) {\n        balance+=amt;\n    }\n    static void withdraw(int amt) {\n        if(balance>=amt) balance-=amt;\n    }\n    public static void main(String[] args) {\n        deposit(500);\n        withdraw(200);\n        System.out.println(balance);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Medium20 {\n    public static void main(String[] args) {\n        int n=1234;\n        int sum=0;\n        while(n>0) {\n            sum+=n%10;\n            n/=10;\n        }\n        System.out.println(sum);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public class Hard1 {\n    static class Student {\n        String name;\n        int marks;\n        Student(String n,int m) {\n            name=n;\n            marks=m;\n        }\n    }\n    public static void main(String[] args) {\n        Student[] arr=new Student[5];\n        arr[0]=new Student(\"A\",80);\n        arr[1]=new Student(\"B\",90);\n        arr[2]=new Student(\"C\",70);\n        arr[3]=new Student(\"D\",85);\n        arr[4]=new Student(\"E\",60);\n        int max=0;\n        String top=\"\";\n        int total=0;\n        for(int i=0;i<arr.length;i++) {\n            total+=arr[i].marks;\n            if(arr[i].marks>max) {\n                max=arr[i].marks;\n                top=arr[i].name;\n            }\n        }\n        double avg=total/(double)arr.length;\n        for(int i=0;i<arr.length;i++) {\n            System.out.println(arr[i].name+\" \"+arr[i].marks);\n        }\n        System.out.println(top);\n        System.out.println(avg);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public class Hard2 {\n    public static void main(String[] args) {\n        int[][] g={{0,1,1,0},{1,0,0,1},{1,0,0,1},{0,1,1,0}};\n        int edges=0;\n        int nodes=g.length;\n        for(int i=0;i<nodes;i++) {\n            for(int j=0;j<nodes;j++) {\n                if(g[i][j]==1) edges++;\n            }\n        }\n        int degreeSum=0;\n        for(int i=0;i<nodes;i++) {\n            int deg=0;\n            for(int j=0;j<nodes;j++) {\n                deg+=g[i][j];\n            }\n            degreeSum+=deg;\n            System.out.println(deg);\n        }\n        System.out.println(edges/2);\n        System.out.println(degreeSum);\n    }\n}"
+  },
+  {
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public class Hard3 {\n    static int binarySearch(int[] arr,int target) {\n        int l=0,r=arr.length-1;\n        while(l<=r) {\n            int mid=(l+r)/2;\n            if(arr[mid]==target) return mid;\n            if(arr[mid]<target) l=mid+1;\n            else r=mid-1;\n        }\n        return -1;\n    }\n    public static void main(String[] args) {\n        int[] arr={1,3,5,7,9,11,13};\n        int idx=binarySearch(arr,7);\n        System.out.println(idx);\n        for(int i=0;i<arr.length;i++) System.out.println(arr[i]);\n    }\n}"
+  }
+]

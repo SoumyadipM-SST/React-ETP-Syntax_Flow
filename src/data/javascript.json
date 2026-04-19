@@ -1,0 +1,132 @@
+[
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const numbers = [1,2,3,4,5];\nfunction sum(arr){\n    let s = 0;\n    for(let i=0;i<arr.length;i++){\n        s += arr[i];\n    }\n    return s;\n}\nconst result = sum(numbers);"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const user = {name:\"A\",age:20,active:true};\nfunction isActive(u){\n    if(u.active){\n        return true;\n    } else {\n        return false;\n    }\n}\nconst status = isActive(user);\nconst msg = status ? \"ok\" : \"no\";"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "let arr = [5,10,15];\narr.push(20);\nfunction avg(a){\n    let sum = 0;\n    for(let x of a){\n        sum += x;\n    }\n    return sum / a.length;\n}\nlet res = avg(arr);"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const nums = [2,3,4,5];\nlet even = [];\nfor(let i=0;i<nums.length;i++){\n    if(nums[i]%2===0){\n        even.push(nums[i]);\n    }\n}\nconst len = even.length;\nconst first = even[0];"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "function greet(name){\n    return \"Hello \" + name;\n}\nconst names = [\"a\",\"b\",\"c\"];\nfor(let i=0;i<names.length;i++){\n    const g = greet(names[i]);\n}\nconst done = true;\nconst count = names.length;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const data = [1,2,3,4];\nfunction square(x){\n    return x*x;\n}\nlet out = [];\ndata.forEach(v=>{\n    out.push(square(v));\n});\nconst sum = out.reduce((a,b)=>a+b,0);\nconst ok = sum > 10;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const obj = {a:1,b:2};\nfunction add(o){\n    return o.a + o.b;\n}\nconst r = add(obj);\nif(r>2){\n    obj.c = r;\n}\nconst final = obj;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "let str = \"abcde\";\nlet rev = \"\";\nfor(let i=str.length-1;i>=0;i--){\n    rev += str[i];\n}\nfunction check(s){\n    return s === rev;\n}\nconst isSame = check(str);\nconst len = str.length;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const list = [1,2,3,4,5];\nlet max = list[0];\nfor(let i=1;i<list.length;i++){\n    if(list[i]>max){\n        max = list[i];\n    }\n}\nconst result = max;\nconst size = list.length;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "function mul(a,b){\n    return a*b;\n}\nconst pairs = [[1,2],[3,4]];\nlet res = [];\nfor(let p of pairs){\n    res.push(mul(p[0],p[1]));\n}\nconst total = res.length;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const arr = [10,20,30];\nfunction inc(a){\n    return a+1;\n}\nlet newArr = [];\nfor(let i=0;i<arr.length;i++){\n    newArr.push(inc(arr[i]));\n}\nconst sum = newArr.reduce((a,b)=>a+b,0);\nconst ok = sum > 50;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const users = [\"x\",\"y\",\"z\"];\nlet map = {};\nfor(let i=0;i<users.length;i++){\n    map[users[i]] = i;\n}\nfunction getKey(k){\n    return map[k];\n}\nconst v = getKey(\"y\");"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const a = [1,2,3];\nconst b = [4,5,6];\nlet c = [];\nfor(let i=0;i<a.length;i++){\n    c.push(a[i]+b[i]);\n}\nfunction sumArr(x){\n    return x.reduce((a,b)=>a+b,0);\n}\nconst total = sumArr(c);"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "let n = 5;\nfunction fact(x){\n    let f = 1;\n    for(let i=1;i<=x;i++){\n        f *= i;\n    }\n    return f;\n}\nconst res = fact(n);"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const items = [\"pen\",\"book\",\"bag\"];\nlet found = false;\nfor(let i=0;i<items.length;i++){\n    if(items[i]===\"book\"){\n        found = true;\n    }\n}\nfunction status(x){\n    return x ? \"yes\" : \"no\";\n}\nconst out = status(found);"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const products = [\n    {id:1,name:\"A\",price:10},\n    {id:2,name:\"B\",price:20},\n    {id:3,name:\"C\",price:30}\n];\nfunction filterExpensive(list){\n    let res = [];\n    for(let i=0;i<list.length;i++){\n        if(list[i].price>15){\n            res.push(list[i]);\n        }\n    }\n    return res;\n}\nconst out = filterExpensive(products);"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const users = [\n    {id:1,active:true},\n    {id:2,active:false},\n    {id:3,active:true}\n];\nfunction getActive(u){\n    let arr = [];\n    for(let i=0;i<u.length;i++){\n        if(u[i].active){\n            arr.push(u[i].id);\n        }\n    }\n    return arr;\n}\nconst result = getActive(users);\nconst len = result.length;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "function calc(a,b){\n    let sum = 0;\n    for(let i=0;i<a.length;i++){\n        sum += a[i];\n    }\n    for(let j=0;j<b.length;j++){\n        sum += b[j];\n    }\n    return sum;\n}\nconst x = [1,2,3];\nconst y = [4,5,6];\nconst total = calc(x,y);\nfunction double(n){\n    return n*2;\n}\nconst final = double(total);\nconst ok = final > 20;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const cart = [\n    {name:\"p1\",qty:2,price:10},\n    {name:\"p2\",qty:1,price:50}\n];\nfunction totalCost(c){\n    let t = 0;\n    for(let i=0;i<c.length;i++){\n        t += c[i].qty * c[i].price;\n    }\n    return t;\n}\nconst cost = totalCost(cart);\nfunction tax(x){\n    return x*0.1;\n}\nconst final = cost + tax(cost);\nconst status = final > 100;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const arr = [1,2,3,4,5,6];\nfunction transform(a){\n    let r = [];\n    for(let i=0;i<a.length;i++){\n        if(a[i]%2===0){\n            r.push(a[i]*a[i]);\n        } else {\n            r.push(a[i]);\n        }\n    }\n    return r;\n}\nconst out = transform(arr);\nconst sum = out.reduce((a,b)=>a+b,0);\nconst ok = sum > 50;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const map = {};\nconst keys = [\"a\",\"b\",\"c\",\"d\"];\nfunction build(m,k){\n    for(let i=0;i<k.length;i++){\n        m[k[i]] = i*i;\n    }\n    return m;\n}\nconst res = build(map,keys);\nfunction get(m,key){\n    return m[key] ?? -1;\n}\nconst v1 = get(res,\"c\");\nconst ok = v1 >= 0;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const data = [[1,2],[3,4],[5,6]];\nfunction flatten(d){\n    let r = [];\n    for(let i=0;i<d.length;i++){\n        for(let j=0;j<d[i].length;j++){\n            r.push(d[i][j]);\n        }\n    }\n    return r;\n}\nconst out = flatten(data);\nconst sum = out.reduce((a,b)=>a+b,0);"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "function fib(n){\n    let a = 0, b = 1;\n    let arr = [];\n    for(let i=0;i<n;i++){\n        arr.push(a);\n        let temp = a + b;\n        a = b;\n        b = temp;\n    }\n    return arr;\n}\nconst series = fib(6);\nconst last = series[series.length-1];"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const employees = [\n    {name:\"a\",salary:10},\n    {name:\"b\",salary:20},\n    {name:\"c\",salary:30}\n];\nfunction avgSalary(e){\n    let sum = 0;\n    for(let i=0;i<e.length;i++){\n        sum += e[i].salary;\n    }\n    return sum / e.length;\n}\nconst avg = avgSalary(employees);\nconst ok = avg > 15;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "const users = [\n    {id:1,name:\"a\",role:\"admin\"},\n    {id:2,name:\"b\",role:\"user\"},\n    {id:3,name:\"c\",role:\"user\"},\n    {id:4,name:\"d\",role:\"admin\"}\n];\nfunction groupByRole(list){\n    let map = {admin:[],user:[]};\n    for(let i=0;i<list.length;i++){\n        let u = list[i];\n        if(u.role===\"admin\"){\n            map.admin.push(u.name);\n        } else {\n            map.user.push(u.name);\n        }\n    }\n    return map;\n}\nconst grouped = groupByRole(users);\nfunction countAdmins(g){\n    return g.admin.length;\n}\nconst adminCount = countAdmins(grouped);\nconst ok = adminCount > 1;"
+  },
+  {
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "const transactions = [\n    {id:1,type:\"credit\",amt:100},\n    {id:2,type:\"debit\",amt:40},\n    {id:3,type:\"credit\",amt:50},\n    {id:4,type:\"debit\",amt:10}\n];\nfunction netBalance(t){\n    let bal = 0;\n    for(let i=0;i<t.length;i++){\n        if(t[i].type===\"credit\"){\n            bal += t[i].amt;\n        } else {\n            bal -= t[i].amt;\n        }\n    }\n    return bal;\n}\nconst balance = netBalance(transactions);\nfunction fee(x){\n    if(x>100){\n        return x*0.05;\n    } else {\n        return x*0.02;\n    }\n}\nconst final = balance - fee(balance);\nconst status = final > 50;"
+  }
+]
